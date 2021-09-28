@@ -82,9 +82,9 @@ void moveRobot(int robNum, bool tab[][5]) {
             if (robots[robNum].y < 4 && !(table[robots[robNum].x][robots[robNum].y+1])) {
                 tab[robots[robNum].x][robots[robNum].y] = false;
                 tab[robots[robNum].x][robots[robNum].y+1] = true;
-                cout << "Robot y: " << robots[robNum].y << endl;
+
                 robots[robNum].y++;
-                cout << "Robot y: " << robots[robNum].y << endl;
+
                 return;
 
             } else {
