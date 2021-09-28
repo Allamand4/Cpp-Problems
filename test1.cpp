@@ -183,7 +183,7 @@ int main()
                 }
             }
 
-            // EXTENSION WORK -- assuming multiple robots can be present on the same grid location
+            // EXTENSION WORK -- assuming multiple robots can't be present on the same grid location
             if (counter > 1) {
                 if (command.find("ROBOT") != string::npos) {
                     int robInd;
