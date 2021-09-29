@@ -164,7 +164,22 @@ int main()
             }
 
             if (command.find("REPORT") != string::npos) {
-                cout << robots[currentRob].x << ", " << robots[currentRob].y << ". Facing " << robots[currentRob].facing << endl;
+                string direction;
+                switch (robots[currentRob].facing) {
+                    case 0:
+                        direction = "NORTH";
+                        break;
+                    case 1:
+                        direction = "EAST";
+                        break;
+                    case 2:
+                        direction = "SOUTH";
+                        break;
+                    case 3:
+                        direction = "WEST";
+                        break;
+                }
+                cout << "Output: " << robots[currentRob].x << ',' << robots[currentRob].y << ',' << direction << endl;
             }
 
             if (command.find("LEFT") != string::npos) {
