@@ -180,6 +180,7 @@ int main()
                         break;
                 }
                 cout << "Output: " << robots[currentRob].x << ',' << robots[currentRob].y << ',' << direction << endl;
+                cout << "Active robot: " << currentRob + 1 << ". Robots present: " << counter << '.' << endl;
             }
 
             if (command.find("LEFT") != string::npos) {
